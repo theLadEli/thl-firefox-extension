@@ -1,0 +1,26 @@
+#plugin-loaded-notice {
+    margin-top: 25px;
+    padding: 15px 30px;
+    background-color: #c9fac8;
+    border-left: solid 3px #03a800;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    /* Dashboard Screen */
+
+    .generic-component__content {
+        flex-direction: column;
+    }
+
+    .template-column {
+        width: 100% !important;
+        flex-direction: column-reverse;
+    }
+
+    #plugin-loaded-notice {
+        margin-bottom: 25px
+    }
+
+}
