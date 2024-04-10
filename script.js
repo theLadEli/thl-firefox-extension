@@ -1,10 +1,16 @@
 // Add Plugin Loaded Notice
 
-var newDiv = document.createElement("div");
-newDiv.id = "plugin-loaded-notice";
-newDiv.innerText = "The CSS plugin has successfully loaded!";
+var loginContainer = document.getElementById('login-container');
 
-document.getElementById("login-container").appendChild(newDiv);
+if (loginContainer) {
+    var newDiv = document.createElement("div");
+    newDiv.id = "plugin-loaded-notice";
+    newDiv.innerText = "The CSS plugin has successfully loaded!";
+    
+    document.getElementById("login-container").appendChild(newDiv);
+} else {
+    console.log('Not on login page.');
+}
 
 // Apply Custom CSS
 
@@ -22,7 +28,7 @@ style.innerHTML = `
 
     @media only screen and (max-width: 600px) {
 
-        /* */
+        /* Dashboard */
 
         .generic-component__content {
             flex-direction: column;
@@ -30,8 +36,17 @@ style.innerHTML = `
 
         .template-column {
             width: 100% !important;
-            flex-direction: column-reverse;
         }
+
+        .smallTitle {
+            font-size: 12px
+        }
+
+        .ui-generic-block__content .smallValue {
+            font-size: 16px
+        }
+
+        /* Login Screen */
 
         #plugin-loaded-notice {
             margin-bottom: 25px
