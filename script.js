@@ -46,6 +46,12 @@ style.innerHTML = `
             font-size: 16px
         }
 
+        /* Forms Page */
+        
+        .ui-select {
+            display: block
+        }
+
         /* Login Screen */
 
         #plugin-loaded-notice {
