@@ -1,0 +1,46 @@
+@media only screen and (max-width: 600px) {
+
+    /* Dashboard */
+
+    body {
+        overflow-y: scroll;
+    }
+
+    .generic-component__content {
+        flex-direction: column;
+    }
+
+    .template-column {
+        width: 100% !important;
+    }
+
+    .smallTitle {
+        font-size: 12px
+    }
+
+    .ui-generic-block__content .smallValue {
+        font-size: 16px
+    }
+
+    .right-side-bar-container {
+        height: unset;
+    }
+
+    /* Forms Page */
+    
+    .ui-select {
+        display: block
+    }
+
+    /* Login Screen */
+
+    #plugin-loaded-notice {
+        margin-bottom: 25px
+    }
+
+    .appLoader, .mobile-layout {
+        height: unset;
+    }
+
+
+}

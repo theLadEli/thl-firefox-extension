@@ -30,6 +30,10 @@ style.innerHTML = `
 
         /* Dashboard */
 
+        body {
+            overflow-y: scroll;
+        }
+
         .generic-component__content {
             flex-direction: column;
         }
@@ -46,6 +50,10 @@ style.innerHTML = `
             font-size: 16px
         }
 
+        .right-side-bar-container {
+            height: unset;
+        }
+
         /* Forms Page */
         
         .ui-select {
@@ -57,6 +65,11 @@ style.innerHTML = `
         #plugin-loaded-notice {
             margin-bottom: 25px
         }
+
+        .appLoader, .mobile-layout {
+            height: unset;
+        }
+
 
     }
 `;
